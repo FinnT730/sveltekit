@@ -56,7 +56,7 @@
       >
         <input type="hidden" name="uid" value={todo.uid} />
         <input type="hidden" name="done" value={todo.done ? '' : 'true'} />
-        <button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}" />
+        <button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}"></button>
       </form>
 
       <form class="text" action="/todos?_method=PATCH" method="post" use:enhance>
